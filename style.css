@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --sedans: #E28625;
+    --suvs: #006971;
+    --luxury: #004140;
+    --text-primary: #F2F2F2;
+    --text-secondary: #FFFFFF;
+    --bg-main: #F2F2F2;
+    --headings: 'Big Shoulders Display', sans-serif;
+    --paragraphs: 'Lexend Deca', sans-serif;
+}
+
+body {
+    background-color: var(--bg-main);
+    font-size: 15px;
+}
+
+main {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0;
+}
+
+.car-card {
+    max-width: 21.8rem;
+}
+
+.car {
+    padding: 0 3rem;
+}
+
+.car img {
+    width: 65px;
+    height: 45px;
+    margin: 2rem 0;
+}
+
+.car h1,
+.car h2 {
+    font-size: 2.66rem;
+    font-family: var(--headings);
+    text-transform: uppercase;
+    color: var(--text-primary);
+    margin-bottom: 2rem;
+}
+
+.car p {
+    color: var(--text-secondary);
+    font-family: var(--paragraphs);
+    margin-bottom: 1.6rem;
+    line-height: 1.6;
+    width: 93%;
+
+}
+
+.btn {
+    background-color: var(--bg-main);
+    text-decoration: none;
+    padding: .8rem 1.5rem;
+    border-radius: 2.5rem;
+    display: inline-block;
+    font-family: var(--paragraphs);
+    margin-bottom: 2.8rem;
+}
+
+.btn:hover {
+    color: #ffffff;
+
+}
+
+.btn-sedan {
+    color: var(--sedans);
+    border: #ffffff solid 2px;
+
+
+}
+
+.btn-sedan:hover {
+    background-color: var(--sedans);
+    transition: all .5s;
+
+}
+
+.btn-suv {
+    color: var(--suvs);
+    border: #ffffff solid 2px;
+}
+
+.btn-suv:hover {
+    background-color: var(--suvs);
+    transition: all .5s;
+}
+
+.btn-luxury {
+    color: var(--luxury);
+    border: #ffffff solid 2px;
+}
+
+.btn-luxury:hover {
+    background-color: var(--luxury);
+    transition: all .5s;
+}
+
+.sedan {
+    background-color: var(--sedans);
+}
+
+.suv {
+    background-color: var(--suvs);
+}
+
+.luxury {
+    background-color: var(--luxury);
+}
+
+
+@media (min-width: 926px) {
+    main {
+        height: 100vh;
+    }
+
+    .car-card {
+        display: flex;
+        max-width: 61.33rem;
+
+    }
+
+    .car p {
+        margin-bottom: 5rem;
+    }
+}
